@@ -1,11 +1,12 @@
 import re
 from playwright.sync_api import Playwright, sync_playwright, expect
+import pwinput
 import time
 
 
 def run(playwright: Playwright) -> None:
     EOP = input("Email or phone : ")
-    password = input("password : ")
+    password = pwinput.pwinput(prompt="password : ", mask='*')
     name = input("enter target profile : ")
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
