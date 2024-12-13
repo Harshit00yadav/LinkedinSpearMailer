@@ -1,2 +1,2 @@
 # LinkedinSpearMailer
-tool for sending messages to targeted users on linkedin
+automates the scheduling of messages on linkedin. send direct message to targeted users on linked in and schedule the time of message delivery.
